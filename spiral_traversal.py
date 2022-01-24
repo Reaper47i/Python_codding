@@ -68,9 +68,6 @@ def move_spiral(arr,n,m):
         
         _dir = (_dir+1)%4
 
-        
-
-    
     return res
 
 
