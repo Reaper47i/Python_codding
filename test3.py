@@ -1,39 +1,10 @@
-'''
-check all the anagrams of substring
-that can be formed by taking the positions 
-from 0 to n
-'''
+n = 9
+s = ''
+for i in range(n):
+    if i%2 == 0:
+        s+='{'
+    else:
+        s+='}'
 
-from collections import Counter
-
-
-s = input()
-a = dict(enumerate(s,0))
-print(a)
-c = Counter(s)
-for i in s:
-    print(s(i))
-    
-    
-
-
-# from collections import Counter
-
-# s = input()
-# print(Counter(s))
-# # print(a)
-# # print(a)
-
-
-
-
-
-
-# a = dict(enumerate(s,0))
-# for i in a.values():
-#     if i in b:
-#         b[i]+=1
-#     else:
-#         b[i] = 1
-    
-# print(b)
+print(s)
+print(s.pop())

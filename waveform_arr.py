@@ -1,6 +1,7 @@
 '''
 we impliment an array to a waveform
 which is like:-
+
 a[0]>=a[1]<=a[2]>=a[3]<=a[4]>=.....a[n-1]<=a[n]
 
 1 2 3 4 5 6 --> 2 1 4 3 6 5 
@@ -9,13 +10,9 @@ a[0]>=a[1]<=a[2]>=a[3]<=a[4]>=.....a[n-1]<=a[n]
 i = 1,
  n - range
 
-1 2 3 4 5
+1 2 3 4 5 
 
 '''
-
-
-
-    
 
 def conv_to_wave(arr,n):
     i = 1
@@ -24,11 +21,11 @@ def conv_to_wave(arr,n):
             if arr[i-1]<arr[i]:
                 temp = arr[i-1]
                 arr[i-1] = arr[i]
-                arr[i] = temp
+                arr[i] = temp  
             if arr[i]>arr[i+1]:
                 temp = arr[i+1]
                 arr[i+1] = arr[i]
-                arr[i] = temp
+                arr[i] = temp  
         else:
             if arr[i]<arr[i-1]:
                 temp = arr[i-1]
@@ -37,9 +34,9 @@ def conv_to_wave(arr,n):
             if arr[i]<arr[i+1]:
                 temp = arr[i+1]
                 arr[i+1] = arr[i]
-                arr[i] = temp 
+                arr[i] = temp  
 
-        i+=1
+        i+=1  
 
     return arr
 
