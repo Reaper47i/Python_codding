@@ -1,4 +1,3 @@
-
 # Python3 program to generate
 # n-bit Gray codes
  
@@ -40,7 +39,6 @@ def generateGrayarr(n):
     print(*arr, sep = "\n")
  
 # Driver Code
-if __name__ == "__main__":
-    generateGrayarr(int(input()))
+generateGrayarr(3)
  
 # This code is contributed by avanitrachhadiya2155
